@@ -17,3 +17,6 @@ nodemon app
 
 -------------MySQL SERVER----------
 npm install mysql -save
+
+-------------CONSIGN----------
+npm install consign --save
