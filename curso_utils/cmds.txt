@@ -7,3 +7,6 @@ npm init
 
 -------------EXPRESS----------
 npm install express -save
+
+-------------EJS----------
+npm install ejs --save
