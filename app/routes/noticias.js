@@ -11,10 +11,9 @@ module.exports = function (app) {
             database: 'portal_noticias'
         });
 
-        conexao.query('select * from noticias', function (error, result) {
-            res.send(result);
+        conexao.query('select * from noticias', function(error, result) {
+            res.render("noticias/noticias" , {noticias : result});
+            //res.send(result);
         });
-
-        //res.render("noticias/noticias");
     });
 }
