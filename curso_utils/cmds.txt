@@ -10,3 +10,7 @@ npm install express -save
 
 -------------EJS----------
 npm install ejs --save
+
+-------------NODEMON----------
+npm install -g nodemon
+nodemon app
