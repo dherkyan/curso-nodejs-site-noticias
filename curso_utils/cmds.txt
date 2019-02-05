@@ -1,0 +1,9 @@
+-----------COMANDOS NODEJS---------
+
+
+-------------INICIANDO NPM----------
+npm -v
+npm init
+
+-------------EXPRESS----------
+npm install express -save

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dherkyan/curso-nodejs-site-noticias/issues"
   },
-  "homepage": "https://github.com/dherkyan/curso-nodejs-site-noticias#readme"
+  "homepage": "https://github.com/dherkyan/curso-nodejs-site-noticias#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
