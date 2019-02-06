@@ -1,5 +1,3 @@
-var conexaoManager = require('../../config/databases');
-
 module.exports = function (app) {
 
     app.get('/noticia', function (req, res) {
@@ -11,7 +9,7 @@ module.exports = function (app) {
             res.render("noticias/noticia" , {noticia : result});
             //res.send(result);
         });
-        
+
     });
     
 }
