@@ -11,6 +11,7 @@ app.set('views','./app/views');
 consign()
     .include('app/routes')
     .then('config/databases.js')
+    .then('app/models')
     .into(app);
 
 module.exports = app;
