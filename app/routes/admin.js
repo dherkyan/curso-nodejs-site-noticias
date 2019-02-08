@@ -5,7 +5,15 @@ module.exports = function(app){
 
 
     app.post('/noticias/salvar',function(req, res){
-        var noticias = req.body;
-        res.send(noticias);
+        var noticia = req.body;
+
+        var conexao = app.config.databases();
+        var noticiasModel = app.app.models.noticiasModel;
+
+        noticiasModel.salvarNoticia(noticia, conexao, function(error, result) {
+            res.redirect("/noticias");
+            //res.send(result);
+        });
+
     });
 }
