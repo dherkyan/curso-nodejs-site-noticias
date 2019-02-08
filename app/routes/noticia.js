@@ -5,7 +5,7 @@ module.exports = function (app) {
         var conexao = app.config.databases();
         var noticiaDao = new app.app.models.NoticiaDao(conexao);
 
-        noticiaDao.getNoticia(conexao , function(error, result) {
+        noticiaDao.getNoticia(function(error, result) {
             res.render("noticias/noticia" , {noticia : result});
             //res.send(result);
         });

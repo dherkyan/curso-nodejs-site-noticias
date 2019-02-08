@@ -10,7 +10,7 @@ module.exports = function(app){
         var conexao = app.config.databases();
         var noticiaDao = new app.app.models.NoticiaDao(conexao);
 
-        noticiaDao.salvarNoticia(noticia, conexao, function(error, result) {
+        noticiaDao.salvarNoticia(noticia, function(error, result) {
             res.redirect("/noticias");
             //res.send(result);
         });

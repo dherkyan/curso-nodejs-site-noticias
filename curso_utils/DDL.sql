@@ -7,5 +7,5 @@ CREATE TABLE `noticias` (
 )
 
 ALTER TABLE portal_noticias.noticias ADD resumo varchar(100) NULL;
-ALTER TABLE portal_noticias.noticias ADD autot varchar(30) NULL;
+ALTER TABLE portal_noticias.noticias ADD autor varchar(30) NULL;
 ALTER TABLE portal_noticias.noticias ADD data_noticia DATE NULL;

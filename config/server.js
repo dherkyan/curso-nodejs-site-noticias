@@ -10,7 +10,7 @@ app.set('view engine','ejs');
 app.set('views','./app/views');
 
 app.use(bodyparser.urlencoded({extended:true}));
-app.use(expressValidator);
+app.use(expressValidator());
 
 consign()
     .include('app/routes')
