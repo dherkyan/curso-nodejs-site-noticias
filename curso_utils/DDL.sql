@@ -5,3 +5,7 @@ CREATE TABLE `noticias` (
   `data_criacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_noticias`)
 )
+
+ALTER TABLE portal_noticias.noticias ADD resumo varchar(100) NULL;
+ALTER TABLE portal_noticias.noticias ADD autot varchar(30) NULL;
+ALTER TABLE portal_noticias.noticias ADD data_noticia DATE NULL;
