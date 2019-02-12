@@ -1,6 +1,6 @@
 module.exports = function (app) {
     app.get('/formulario_inclusao_noticia', function (req, res) {
-        res.render("admin/form_add_noticia", { validacao: {} });
+        res.render("admin/form_add_noticia", { validacao: {}, noticia:{} });
     });
 
 
@@ -10,6 +10,7 @@ module.exports = function (app) {
 
         req.assert('titulo', 'Título é obrigatório').notEmpty();
         req.assert('resumo', 'Resumo é obrigatório').notEmpty();
+        req.assert('autor', 'Autor é obrigatório').notEmpty();
         req.assert('resumo', 'Resumo deve conter entre 10 e 100 caracteres').len(10, 100);
         req.assert('data_noticia', 'Data é obrigatório').notEmpty();
         req.assert('texto', 'Texto da notícia é obrigatório').notEmpty();
@@ -19,11 +20,9 @@ module.exports = function (app) {
         console.log(errors);
 
         if (errors) {
-            res.render('admin/form_add_noticia', { validacao : errors});
+            res.render('admin/form_add_noticia', { validacao : errors, noticia: noticia});
             return;
         }
-        
-        console.log('salvar no bd...');
 
         var conexao = app.config.databases();
         var noticiaDao = new app.app.models.NoticiaDao(conexao);
