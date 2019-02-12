@@ -7,7 +7,7 @@ NoticiaDao.prototype.getNoticias = function(callback){
 }
 
 NoticiaDao.prototype.getNoticia = function(callback){
-    this._conexao.query('SELECT * FROM NOTICIAS WHERE ID_NOTICIAS = 2',callback);
+    this._conexao.query('SELECT * FROM NOTICIAS LIMIT 1',callback);
 }
 
 NoticiaDao.prototype.salvarNoticia = function(noticia, callback){
