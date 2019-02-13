@@ -78,11 +78,11 @@
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
 		<% if(validacao){%>
-			<ul>
 				<%for(var i = 0; i < validacao.length ; i++){%>
-					<li><%=validacao[i].msg%></li>
+          <div class="alert alert-danger" role="alert">
+            <%=validacao[i].msg%>
+          </div>
 				<%}%>
-			</ul>
 		<%}%>
 		<form action="/noticias/salvar" method="POST" id="contactForm" novalidate>
           <div class="control-group">
