@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="/css/clean-blog.min.css" rel="stylesheet">
 
 </head>
 
@@ -55,7 +55,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
+  <header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -88,35 +88,35 @@
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Título</label>
-              <input type="text" class="form-control" placeholder="Título" id="titulo" name="titulo" required data-validation-required-message="Título é obrigatório">
+              <input type="text" class="form-control" placeholder="Título" id="titulo" name="titulo" value="<%=noticia.titulo%>" required data-validation-required-message="Título é obrigatório">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Resumo</label>
-              <input type="text" class="form-control" placeholder="Resumo" id="resumo" name="resumo" required data-validation-required-message="Resumo é obrigatório">
+              <input type="text" class="form-control" placeholder="Resumo" id="resumo" name="resumo" value="<%=noticia.resumo%>" required data-validation-required-message="Resumo é obrigatório">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Autor</label>
-              <input type="text" class="form-control" placeholder="Nome Autor" id="autor" name="autor" required data-validation-required-message="Nome do Autor é obrigatório">
+              <input type="text" class="form-control" placeholder="Nome Autor" id="autor" name="autor" value="<%=noticia.autor%>" required data-validation-required-message="Nome do Autor é obrigatório">
               <p class="help-block text-danger"></p>
             </div>
 		  </div>
 		  <div class="control-group">
 				<div class="form-group col-xs-12 floating-label-form-group controls">
 				  <label>Autor</label>
-				  <input type="date" class="form-control" placeholder="Data Notícia" id="data_noticia" name="data_noticia" required data-validation-required-message="Data Notícia">
+				  <input type="date" class="form-control" placeholder="Data Notícia" id="data_noticia" name="data_noticia" value="<%=noticia.data_noticia%>" required data-validation-required-message="Data Notícia">
 				  <p class="help-block text-danger"></p>
 				</div>
 			  </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Notícia</label>
-              <textarea rows="5" class="form-control" placeholder="Texto da notícia" id="texto" name="texto" required data-validation-required-message="Texto da notícia é obrigatório"></textarea>
+              <textarea rows="5" class="form-control" placeholder="Texto da notícia" id="texto" name="texto" required data-validation-required-message="Texto da notícia é obrigatório"><%=noticia.texto%></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -179,7 +179,7 @@
   <script src="js/contact_me.js"></script>
 -->
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
+  <script src="/js/clean-blog.min.js"></script>
 
 </body>
 
