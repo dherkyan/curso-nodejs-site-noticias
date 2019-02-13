@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -61,8 +61,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1><%=noticia[0].titulo%></h1>
-            <h2 class="subheading"><%=noticia[0].resumo%></h2>
+            <h3><%=noticia[0].titulo%></h3>
+            <p class="subheading"><%=noticia[0].resumo%></p>
             <span class="meta">Postado por
               <a href="#"><%=noticia[0].autor%></a>
               em  <%=noticia[0].data_noticia%></span>
@@ -78,14 +78,15 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
-            <a href="post.html">
+            <a href="#">
               <h2 class="post-title">
                 <%=noticia[0].titulo%>
               </h2>
-              <h3 class="post-subtitle">
-                <%=noticia[0].texto%>
-              </h3>
             </a>
+              <p class="post-subtitle">
+                <%=noticia[0].texto%>
+              </p>
+            
             <p class="post-meta">Postado por
               <a href="#"><%=noticia[0].autor%></a>
               em <%=noticia[0].data_noticia%></p>

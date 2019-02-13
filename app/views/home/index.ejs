@@ -80,18 +80,19 @@
 			<div class="col-lg-8 col-md-10 mx-auto">
 					<% for(var i=0; i < noticias.length; i++){ %>
 						<div class="post-preview">
-								<a href="/noticia?id=<%=noticias[i].id_noticias%>">
-									<h2 class="post-title">
-										<%=noticias[i].titulo%>
-									</h2>
-									<h3 class="post-subtitle">
-										<%=noticias[i].texto%>
-									</h3>
-								</a>
-								<p class="post-meta">Postado por
-									<a href="#"><%=noticias[i].autor%></a>
-									em <%=noticias[i].data_noticia%></p>
-							</div>
+							<a href="/noticia?id=<%=noticias[i].id_noticias%>">
+								<h2 class="post-title">
+									<%=noticias[i].titulo%>
+								</h2>
+							</a>
+							<p class="post-subtitle">
+								<%=noticias[i].texto%>
+							</p>
+						
+							<p class="post-meta">Postado por
+								<a href="#"><%=noticias[i].autor%></a>
+								em <%=noticias[i].data_noticia%></p>
+						</div>
 							<hr>
 					<%}%>
 				
