@@ -11,10 +11,12 @@
   <title>Clean Blog - Start Bootstrap Theme</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://blackrockdigital.github.io/startbootstrap-clean-blog/vendor/bootstrap/css/bootstrap.min.css"
+  rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://blackrockdigital.github.io/startbootstrap-clean-blog/vendor/fontawesome-free/css/all.min.css"
+		rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -53,7 +55,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -75,7 +77,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <%=noticia[0].texto%>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                <%=noticia[0].titulo%>
+              </h2>
+              <h3 class="post-subtitle">
+                <%=noticia[0].texto%>
+              </h3>
+            </a>
+            <p class="post-meta">Postado por
+              <a href="#"><%=noticia[0].autor%></a>
+              em <%=noticia[0].data_noticia%></p>
+          </div>
+          <hr>
         </div>
       </div>
     </div>
@@ -121,8 +136,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://blackrockdigital.github.io/startbootstrap-clean-blog/vendor/jquery/jquery.min.js"></script>
+  <script src="https://blackrockdigital.github.io/startbootstrap-clean-blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
